@@ -65,6 +65,7 @@ def main():
     result = {
         "model" : "random_network",
         "num_layers": args.num_layers,
+        "syn_loss": float(marocco.stats.getSynapseLoss())/marocco.stats.getSynapses(),
         "conn_prob": args.conn_prob,
         "neurons_per_layer": args.neurons_per_layer,
         "task" : "num_layers{}_conn_prob{}_neurons_per_layer{}".format(args.num_layers,\
