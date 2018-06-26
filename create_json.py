@@ -13,4 +13,4 @@ for num_layers in range(2,11):
     })
 
 with file("benchmarks.json", "w") as outfile:
-    json.dump(benchmark, outfile, indent=4)      
+    json.dump([benchmark], outfile, indent=4)      
