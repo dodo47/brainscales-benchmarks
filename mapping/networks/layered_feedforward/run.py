@@ -47,7 +47,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--num_layers', default=2, type=int)
     parser.add_argument('--conn_prob', default = 1., type=float)
-    parser.add_argument('--neurons_per_layer', default = 500, type=int)
+    parser.add_argument('--neurons_per_layer', default = 200, type=int)
 
     args = parser.parse_args()
 

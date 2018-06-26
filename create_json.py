@@ -6,7 +6,7 @@ benchmark = {"model": {
              },
              "tasks": []}
 
-for num_layers in range(2,6):
+for num_layers in range(2,11):
     benchmark['tasks'].append({
                        "name": "layered_feedfoward_network_num_layers{}".format(num_layers),
                        "command": "mapping/networks/layered_feedforward/run.py --num_layers {}".format(num_layers)
