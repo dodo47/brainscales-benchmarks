@@ -102,7 +102,7 @@ def main():
         ]
     }
 
-    with open("random_num_layers{}_conn_prob{}neurons_per_layer{}_results.json".format(args.num_layers,\
+    with open("feedforward_layered_num_layers{}_conn_prob{}neurons_per_layer{}_results.json".format(args.num_layers,\
                                                    args.conn_prob, args.neurons_per_layer), 'w') as outfile:
         json.dump(result, outfile)
 
